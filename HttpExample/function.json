@@ -13,7 +13,7 @@
       "name": "$return"
     }
   ],
-  "scriptFile": "init.py"
+  "scriptFile": "__init__.py"
 }
 
 
