@@ -5,8 +5,8 @@ pipeline {
         AZURE_CLIENT_ID = credentials('azure-client-id')
         AZURE_CLIENT_SECRET = credentials('azure-client-secret')
         AZURE_TENANT_ID = credentials('azure-tenant-id')
-        RESOURCE_GROUP = 'YourResourceGroup'
-        FUNCTION_APP_NAME = 'your-function-app-name'
+        RESOURCE_GROUP = 'mayank8875518_pipeline'
+        FUNCTION_APP_NAME = 'functionpipeline8875518'
     }
 
     stages {
