@@ -1,5 +1,11 @@
 import pytest
-import HttpExample  # Import the module directly
+import sys
+import os
+
+# Add the parent directory of HttpExample to the system path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'HttpExample')))
+
+import HttpExample  # Now, we can import HttpExample as expected
 from unittest.mock import MagicMock
 
 class DummyRequest:
@@ -26,3 +32,4 @@ def test_http_method():
     req = DummyRequest(method="GET")
     resp = HttpExample.main(req)  # Call the main function from HttpExample
     assert req.method == "GET"
+
